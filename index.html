@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Bookmark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        
+    </style>
+</head>
+<body>
+ <div class="heading">
+    <h1 id="show-modal">Add Bookmark</h1>
+</div>
+      <div class="container" id="bookmark-container">
+      </div>
+ 
+      <!-- MODAL -->
+      <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fa-regular fa-circle-xmark" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- Website Name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label" id="website-name">Website Name</label>
+                        <input type="text" class="form-output" id="website-title">
+                    </div>
+                    <!-- Website URL -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label" id="website-name">Website Url</label>
+                        <input type="text" class="form-output" id="website-url">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
